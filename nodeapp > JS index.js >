@@ -1,0 +1,9 @@
+const ex = require('express');
+const mg = require('mongoose');
+const mr = require('./routers/movieRoutes');
+const app ex();
+app.use(ex.json());
+mg.connect('mongodb://127.0.0.1:27017/movieDB')
+.catch(e => console.log(e));
+app.use('/movies', mr);
+app.listen(8080);

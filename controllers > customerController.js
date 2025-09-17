@@ -20,3 +20,5 @@ return res.status(404).json({message: "Name, email, and phone are required to up
 if(!u) return res.status (404).json({message: "Customer not found"});
 res.status (200).json(u);
 } catch(err) { next (err); }
+};
+module.exports = {createCustomer, getAllCustomers, updateCustomer};

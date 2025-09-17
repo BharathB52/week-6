@@ -1,0 +1,9 @@
+const ex = require('express');
+constr ex.Router();
+const {cm, gm, gmi, um, dm} = require('../controllers/movieController');
+r.post('/movies', cm);
+r.get('/movies',gm);
+r.get('/movies/:id', gmi);
+r.put('/movies/:id', um);
+r.delete('/movies/:id', dm);
+module.exports = r;
